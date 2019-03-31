@@ -46,6 +46,7 @@ article.cmp {
   box-shadow: 0px 1px 6px 0px #ddddddc7;
   background-color: white;
   height: 4.2rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .top-bar .controls-list>li a:not(.btn):hover {
@@ -121,7 +122,7 @@ a i.fa-angle-double-right {
 }
 
 header .header-cont {
-  background-color: #ddd;
+  background-color: #e6e6e6;
 }
 
 .img-contain {
@@ -154,7 +155,7 @@ header .header-cont {
 }
 
 .anicon>.anicon-search-item:after {
-  background: #dedede;
+  background: #e6e6e6;
   border: 1px solid #495057;
 }
 
@@ -193,7 +194,7 @@ header .header-cont {
 }
 
 .anicon.anicon-search-xcross:focus {
-  background: #495057;
+  background: transparent;
 }
 
 .owl-carousel .owl-single-item-control {
@@ -243,4 +244,57 @@ li.ddown:hover>a {
 
 ul.collapse {
   box-shadow: 1px 1px 1px 0px #d0d0d0;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 4px;
+}
+
+.mobile-navigation {
+  background: #ddd;
+}
+
+.cmp-country-settings {
+  background-color: #78909C;
+}
+
+strong {
+  font-weight: bolder;
+  color: #fff;
+}
+
+.search-submit>.fa-search {
+  color: #ddd;
+}
+
+.search-submit {
+  background-color: #008ebd;
+}
+
+.cmp-currency-select {
+  background-color: darkgray;
+}
+
+.widget-inner.col-12.col-md-8.widget-prop-3-2 {
+  margin-top: 1rem;
+}
+
+.owl-carousel .owl-dots {
+  margin-bottom: -1rem;
+}
+
+.btn:focus >.mobile-text-only {
+  color: #ddd;
+}
+
+.col-12, .col-xs-12 {
+  margin-top: 0.5rem;
+}
+
+.btn-close, .breadcrumb-item>.fa-home, .breadcrumb-item {
+  color: #ddd;
 }
