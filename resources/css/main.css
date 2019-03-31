@@ -5,6 +5,8 @@
 
 .widget.widget-title-bar.widget-primary .widget-inner {
   background-color: #ddd;
+  border-radius: 2px;
+  border: 1px solid #BDBDBD;
 }
 
 .widget.widget-title-bar.widget-success .widget-inner h1 {
@@ -12,10 +14,19 @@
   font-weight: 300;
 }
 
+.widget-inner .widget-caption.mb-3 {
+  background-color: #dddddd;
+  border-radius: 2px;
+  border: 1px solid #BDBDBD;
+}
+
+article.cmp {
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
 .back-to-top {
   height: 5rem;
   width: 5rem;
-  display: flex !important;
   justify-content: center;
   border-radius: 50%;
   border: none;
@@ -26,17 +37,15 @@
 .back-to-top i {
   font-size: 28px;
   color: #03749a;
-  margin: auto;
-}
-
-.widget {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  height: 5rem;
+  margin-top: 1.5rem;
 }
 
 .navbar {
   border-top: 1px solid #cecdc7;
   box-shadow: 0px 1px 6px 0px #ddddddc7;
+  background-color: white;
+  height: 4.2rem;
 }
 
 .top-bar .controls-list>li a:not(.btn):hover {
@@ -56,8 +65,8 @@
 
 .no-touch #mainNavbarCollapsable ul.mainmenu>li:hover,
 .touch #mainNavbarCollapsable ul.mainmenu>li.hover {
-  background: #878d92;
-  color: white;
+  background-color: white;
+  color: #495057;
 }
 
 .badge {
@@ -68,8 +77,17 @@ i.fa-shopping-cart {
   color: #ddd;
 }
 
-.widget .widget-caption h2, .widget .widget-primary h1, i.fa-angle-double-right {
-  color: #f7ffff
+h2,
+h1 {
+  color: #495057;
+}
+
+i.fa-angle-double-right {
+  color: #f7ffff;
+}
+
+a i.fa-angle-double-right {
+  color: #495057;
 }
 
 .img.contain {
@@ -84,20 +102,17 @@ i.fa-shopping-cart {
   background-color: #9E9E9E;
 }
 
-.widget.widget-image-box.widget-image-box-fullwidth.widget-primary.widget-proportional .widget-inner .widget-caption {
-  background-color: #4abdac;
+.widget-image-carousel.widget-primary .carousel-indicators li {
+  border-color: #ddd;
 }
 
 .widget.widget-title-bar.widget-primary h1 {
-  color: #f5f5f5;
+  color: #495057;
+  font-size: 1.1rem;
 }
 
 .widget.widget-title-bar.widget-primary .widget-inner:nth-of-type(2) {
   padding: 0.69rem 1.5rem;
-}
-
-i.fa.fa-user {
-  color: #f7ffff;
 }
 
 /* Added new class names */
@@ -107,4 +122,125 @@ i.fa.fa-user {
 
 header .header-cont {
   background-color: #ddd;
+}
+
+.img-contain {
+  display: none;
+}
+
+.widget-item-list.widget-primary .widget-caption a {
+  color: #495057;
+}
+
+.widget-image-carousel {
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+.footer-features {
+  border: 1px solid #bdbdbd;
+}
+
+.widget-image-carousel.widget-primary .carousel-control .fa {
+  color: #dddddd;
+}
+
+.widget-image-carousel.widget-primary .carousel-indicators li.active {
+  background-color: #ddd;
+}
+
+.widget.widget-image-box.widget-image-box-fullwidth.widget-primary.widget-proportional .widget-inner .widget-caption {
+  background-color: #e2e2e2;
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.18);
+}
+
+.anicon>.anicon-search-item:after {
+  background: #dedede;
+  border: 1px solid #495057;
+}
+
+.anicon>.anicon-search-item:before {
+  background: #495057
+}
+
+@media (min-width: 768px) {
+  .anicon.anicon-search-xcross[aria-expanded="false"]:hover>.anicon-search-item:after {
+    background: #dedede;
+  }
+}
+
+.btn>.fa {
+  color: #ddd;
+}
+
+.static-link-list a:hover {
+  color: #5a5656;
+  margin-right: 10px;
+}
+
+.cmp-search-box .search-input {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.search-submit {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.cmp-search-box {
+  background-color: #495057;
+  width: 100%;
+}
+
+.anicon.anicon-search-xcross:focus {
+  background: #495057;
+}
+
+.owl-carousel .owl-single-item-control {
+  color: #7db5c9;
+}
+
+div:not(.top-bar)>.page-header>div>.cmp-search-box {
+  background-color: darkgray;
+  height: 4.2rem;
+}
+
+.search-box-shadow-frame {
+  height: 3rem;
+  margin-top: 0.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a7a7a7;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+li.ddown:hover>a {
+  border-bottom: 2px solid #008ebd;
+}
+
+@media (min-width: 992px) {
+  .no-touch #mainNavbarCollapsable ul.mainmenu>li>ul>li:hover,
+  .touch #mainNavbarCollapsable ul.mainmenu>li>ul>li.hover {
+    background: #e4e4e4;
+    color: #495057;
+    text-decoration: none;
+  }
+}
+
+ul.collapse {
+  box-shadow: 1px 1px 1px 0px #d0d0d0;
 }
