@@ -50,8 +50,12 @@ article.cmp {
 }
 
 .top-bar .controls-list>li a:not(.btn):hover {
-  background-color: #008ebd;
+  background-color: transparent;
   color: #fff;
+}
+
+.top-bar .controls-list .control-search a[aria-expanded="true"] {
+  background: #008ebd;
 }
 
 #mainNavbarCollapsable ul.mainmenu>li>ul>li {
@@ -172,13 +176,7 @@ header .header-cont {
 }
 
 .cmp-search-box .search-input {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.search-submit {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  background-color: #f4f4f4;
 }
 
 .cmp-search-box {
@@ -195,13 +193,15 @@ header .header-cont {
 }
 
 div:not(.top-bar)>.page-header>div>.cmp-search-box {
-  background-color: darkgray;
+  background-color: white;
   height: 4.2rem;
 }
 
 .search-box-shadow-frame {
   height: 3rem;
   margin-top: 0.2rem;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px #ddd;
 }
 
 ::-webkit-scrollbar {
@@ -272,7 +272,7 @@ strong {
 }
 
 .search-submit {
-  background-color: white !important;
+  background-color: #f4f4f4 !important;
 }
 
 .cmp-currency-select {
@@ -297,10 +297,14 @@ strong {
 .breadcrumb-item,
 .btn:focus>.mobile-text-only,
 .search-submit>.fa-search {
-  color: #ddd;
+  color: #757779;
 }
 
 .input-unit {
   border: 2px solid #ddd;
   border-radius: 4px;
+}
+
+.top-bar .controls-list .control-languages a[aria-expanded="true"] {
+  background: #008ebd;
 }
