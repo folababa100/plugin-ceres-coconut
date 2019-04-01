@@ -308,3 +308,7 @@ strong {
 .top-bar .controls-list .control-languages a[aria-expanded="true"] {
   background: #008ebd;
 }
+
+.col>.widget.widget-title-bar.widget-success {
+  display: none;
+}
